@@ -189,10 +189,10 @@ header li{
     position: relative;
     top: 10px;
 }
-.ratingrice h6{
+.ricerating h6{
     visibility: hidden;
 }
-.ratingrice{
+.ricerating{
     position: relative;
     left: 5px;
     bottom: 10px;
@@ -303,7 +303,7 @@ label svg{
     height: 60px;
 }
 
-#menup h6{
+#menu p h6{
     visibility: hidden;
     position: absolute;
 }
@@ -315,7 +315,7 @@ label svg{
     left: 5px;
     background-color: #ffffff;
 }
-#signup h6{
+#signin h6{
     visibility: hidden;
     position: absolute;
 }
@@ -323,7 +323,7 @@ label svg{
     visibility: hidden;
     position: absolute;
 }
-#signup p{
+#signin p{
     font-size: 20px;
     display: inline;
     position: absolute;
@@ -429,7 +429,7 @@ small{
         justify-content: center;
         padding-top: 20px;
         height: 80px;
-        padding-left: 20px;
+        padding-left: 5px;
     }
     nav a{
         color: #EB5428;
@@ -501,11 +501,12 @@ small{
         bottom: 55px;
         left: 200px;
     }
+    
     .dishes{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    #footerimg{
+    #footerpic{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -545,10 +546,10 @@ small{
         position: absolute;
         z-index: 0;
     }
-    #headermenu{
+    #top-menu{
         display: flex;
     }
-    #headermenu h6{
+    #top-menu h6{
         visibility: hidden;
         position: absolute;
     }
@@ -558,7 +559,7 @@ small{
         top: -70px;
         z-index: 4;
     }
-    #signup p{
+    #signin p{
         left: 565px;
     }
     #details{
@@ -568,7 +569,7 @@ small{
     #details h2 , #details dl{
         color: #7ABFBF;
     }
-    #footerimg{
+    #footerpics{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -596,19 +597,19 @@ small{
         position: relative;
         top: -30px;
     }
-    #guac{
+    #guacamole{
         display: flex;
         flex-direction: column;
     }
-    #guac p{
+    #guacamole p{
         position: relative;
         top: -30px;
     }
-    #tort{
+    #tortilla{
         display: flex;
         flex-direction: column;
     }
-    #tort p{
+    #tortilla p{
         position: relative;
         top: -30px;
     }
@@ -626,25 +627,4 @@ small{
         top: -105px;
         left: 90px;
     }
-}
-@media print{
-    body{
-        background-color: #F2F2F2;   
-        color: #0D0D0D;
-        margin: 0.5in ;
-        font-family: sans-serif;
-    }
-    img{
-        filter: grayscale;
-    }
-    svg{
-        filter: grayscale;
-    }
-    nav{
-        display: none;
-    }
-    a[href]::after{
-        content: " (" attr(href) ")";
-    }
-
 }
