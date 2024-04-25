@@ -45,6 +45,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+/* HTML5 display-role reset for older browsers end */
 
 html{
     background-color: rgba(122, 191, 191, .5);
@@ -72,7 +73,7 @@ h3{
     font-family: "Montserrat";
 }
 dd , dt{
-    font-size: 16px;
+    font-size: 15px;
 
 }
 dt{
@@ -104,12 +105,6 @@ header a{
     flex-direction: column;
     position: relative;
 }
-
-header img{
-    width: 414px;
-    height: 100%;
-    margin-bottom: 15px;
-}
 menu{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -118,6 +113,11 @@ menu{
 menu svg{
     margin-left: 30px;
 }
+header img{
+    width: 414px;
+    height: 100%;
+    margin-bottom: 15px;
+}
 header li{
     list-style: none;
     padding-bottom: 20px;
@@ -125,12 +125,8 @@ header li{
     flex-direction: column;
 }
 
-/* main content here */
+/* main page content here */
 
-#details h2{
-    display: flex;
-    justify-content: center;
-}
 #details dl{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -144,6 +140,10 @@ header li{
 }
 #details dt{
     font-weight: bold;
+}
+#details h2{
+    display: flex;
+    justify-content: center;
 }
 #ingredients h2{
     display: flex;
@@ -163,6 +163,14 @@ header li{
     margin-bottom: 20px;
     position: relative;
     right: 15px;
+}
+.ricerating h6{
+    visibility: hidden;
+}
+.ricerating{
+    position: relative;
+    left: 5px;
+    bottom: 10px;
 }
 #sides{
     background-color: var(--blue);
@@ -189,14 +197,6 @@ header li{
     position: relative;
     top: 10px;
 }
-.ricerating h6{
-    visibility: hidden;
-}
-.ricerating{
-    position: relative;
-    left: 5px;
-    bottom: 10px;
-}
 .salsarating h6{
     visibility: hidden;
 }
@@ -220,6 +220,11 @@ header li{
 
 
 /*nav */
+nav a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5em;
+}
 nav ul {
     max-height: 0;
     overflow: hidden;
@@ -228,6 +233,9 @@ nav ul {
     bottom: 20px;
     right: 40px;
 }
+nav a:hover{
+    text-decoration: underline;
+}
 nav li{
     background-color: #EB5428;
     list-style: none;
@@ -235,18 +243,7 @@ nav li{
     justify-content: center;
     width: 100%;
 }
-nav a{
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1.5em;
-}
-nav a:hover{
-    text-decoration: underline;
-}
-[href="#home"] svg{
-    background-color: #EB5428;
-    stroke: #ffffff;
-}
+
 nav li:last-child{
     position: absolute;
     top: 0;
@@ -261,18 +258,15 @@ nav li svg{
     position: fixed;
     top: 1px;
 }
+[href="#home"] svg{
+    background-color: #EB5428;
+    stroke: #ffffff;
+}
 .dropdown img{
     visibility: hidden;
 }
 input:checked ~ ul {
     max-height: 500px;
-}
-#hamburger input{
-    display: block;
-    position: relative;
-    left: 10px;
-    background-color: #ffffff;
-    display: none;
 }
 .search{
     display: flex;
@@ -282,7 +276,13 @@ input:checked ~ ul {
     left: 0;
     top: 80px;
 }
-
+#hamburger input{
+    display: block;
+    position: relative;
+    left: 10px;
+    background-color: #ffffff;
+    display: none;
+}
 .search input{
     width: 250px;
     border: 2px solid #EB5428;
